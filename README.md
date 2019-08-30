@@ -14,16 +14,16 @@ The base was designed in [SketchUp](http://bit.ly/2LKs3E0) to both hold the shad
 
 The base was printed using [TRONXY Wood filament](https://amzn.to/2LKLBYL).
 
-![sketchup_base](http://bit.ly/2LKs3E0)
+![sketchup_base](https://github.com/woodwerk/3D_print_voronoi_lamp/blob/master/media/voronai_base_skp.png)
 
 ### LED pillar
 The interior was lit with four [NeoPixel Sticks](https://www.adafruit.com/product/1426) (8 LEDs each). 
 
-![neopixel_stick](http://bit.ly/312kSuy)
+![neopixel_stick](https://github.com/woodwerk/3D_print_voronoi_lamp/blob/master/media/neopixel_stick.png)
 
 There is an interior 30x30 mm shaft in the shade and pillar was designed to mount two of the sticks (end-to-end) facing opposite diagonals. That is, the **Sticks** were only on two faces of the pillar. The design from **Sketchup** is shown below.
 
-![pillar](http://bit.ly/2LRUOij)
+![pillar](https://github.com/woodwerk/3D_print_voronoi_lamp/blob/master/media/pillar_skp.png)
 
 The lower, square base fits into the interior shaft of the shade and the pillar, rotated at 45˚ relative to the base provides mounting points for the **NeoPixel Sticks**. The slots allow access to attach 2-56 nuts to the machine screws that secure the **Sticks** with slight hexagonal recesses for the nuts.
 
@@ -31,12 +31,12 @@ The pillar was printed from the same [ERYONE White filament](https://amzn.to/310
 
 The pillar resting upon the base with **Sticks** attached and wired into the Trinket is shown below.
 
-![pillar_and_sticks](http://bit.ly/2LLg8WB)
+![pillar_and_sticks](https://github.com/woodwerk/3D_print_voronoi_lamp/blob/master/media/voronai_pillar.png)
 
 ## Electronics and Code
 An [Adafruit Trinket M0](https://www.adafruit.com/product/3500) drove the four daisy-chained **NeoPixel Sticks**. The schematic below illustrates the connection to the **NeoPixels** and the push-button switch that successively cycles the program through color schemes.
 
-![schematic](http://bit.ly/30YV1DB)
+![schematic](https://github.com/woodwerk/3D_print_voronoi_lamp/blob/master/media/voronai_schematic.png)
 
 The Arduino code (neosticks.ino) to create the evolving colored lighting is below. The Sticks are run at only 1/8 brightness `uint8_t brite = 32` to avoid overheating.
 
@@ -197,3 +197,7 @@ void loop() {
 }
 
 ```
+
+Here's a GIF of the rainbow color cycle in action.
+
+![rainbox_cycle](https://github.com/woodwerk/3D_print_voronoi_lamp/blob/master/media/voronoi.gif)
